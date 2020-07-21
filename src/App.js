@@ -17,9 +17,9 @@ export default function App() {
   useEffect(() => {
     fetchShow()
       .then(res => {
-        console.log('App res.data should match fetchShow fetch.data:', res.data);
+        //console.log('App res.data should match fetchShow fetch.data:', res.data);
         setShow(res.data);
-        console.log('Episodes array:', res.data._embedded.episodes);
+        //console.log('Episodes array:', res.data._embedded.episodes);
         setSeasons(formatSeasons(res.data._embedded.episodes));
       });
     //fetchShow();
